@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página de Contenido</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+    </head>
+    <body style="background-color: azure">
+        <br />
+        <center>
+            <h1 class="title">Contenido del curso</h1>
+        </center>
+        <br /><br />
+        <div class="columns">
+            <div class="column is-narrow">
+                <div class="box" style="position: fixed; left: 6%">
+                    <p class="subtitle is-5 has-text-centered">
+                        Seleccione un video:
+                    </p>
+                    <div class="buttons is-centered">
+                        <button
+                            class="button is-small is-rounded"
+                            onclick="changeVideo('https://www.youtube.com/embed/videoseries?si=O4_5p2HlSOjCoL4_&amp;list=PLyvsggKtwbLVva0XXvoqx91iaLmhgeNy7')"
+                        >
+                            Video 1
+                        </button>
+                        <button
+                            class="button is-small is-rounded"
+                            onclick="changeVideo('https://www.youtube.com/embed/UzYgNZlKA4k?si=Z_6a4ldgNgjOez9z')"
+                        >
+                            Video 2
+                        </button>
+                        <button
+                            class="button is-small is-rounded"
+                            onclick="changeVideo2('https://www.youtube.com/embed/4dKuDEWEAmo?si=jEaRYzn-_4DYhaAw')"
+                        >
+                            Video 3
+                        </button>
+                    </div>
+                    <div class="buttons is-centered">
+                        <button
+                            class="button is-primary is-outlined is-large"
+                            onclick="goBack()"
+                            style="border-radius: 20%"
+                        >
+                            Regresar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <center>
+                        <iframe
+                            id="video"
+                            class="mb-4"
+                            width="660"
+                            height="415"
+                            src="https://www.youtube.com/embed/videoseries?si=O4_5p2HlSOjCoL4_&amp;list=PLyvsggKtwbLVva0XXvoqx91iaLmhgeNy7"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <p
+                            id="texto"
+                            class="subtitle is-5"
+                            style="width: 70%; text-align: justify"
+                        >
+                            Hola Qué tal amigos de YouTube Bienvenidos a un
+                            nuevo video el día de hoy vamos a iniciar un nuevo
+                            curso de cómo aprender a programar antes de comenzar
+                            me gustaría indicarte Tres puntos bien importantes
+                            para que estés al tanto de qué va a tratar este
+                            curso en primer lugar es que va a ser un curso muy
+                            didáctico e interactivo es decir vamos a programar
+                            bastante con la finalidad de que tú logres
+                            desarrollar las habilidades necesarias para que seas
+                            un programador de éxito en segundo lugar es que
+                            cuando termines este curso vas a poder elegir el
+                            lenguaje de programación de tu preferencia y
+                            finalmente lo que hace diferente este curso es que
+                            no vamos a utilizar ningún lenguaje de programación
+                            Así es no vamos a utilizar ningún lenguaje de
+                            programación ya que vamos a utilizar un software
+                            especial el cual nos va a permitir programar sin
+                            escribir ni una sola línea de código ahora tú dirás
+                            Por qué no vamos a escribir líneas de código porque
+                            vamos a usar un lenguaje de programación si vamos a
+                            programar Bueno te voy a poner un ejemplo muy simple
+                            lo que pasa es que supongamos que tú quieres
+                            aprender a hablar inglés alemán o francés qué es lo
+                            que sucede tú no puedes aprender a hablar otro
+                            idioma si no has aprendido a hablar primero tienes
+                            que aprender a hablar para posteriormente poder
+                            aprender un nuevo idioma lo mismo pasa con la
+                            programación Si tú no has aprendido a programar no
+                            puedes aprender a escribir código en un lenguaje de
+                            programación que ese es el error que cometen muchos
+                            profesores y muchas personas que nos ayudan con
+                            vídeos en internet Entonces lo que vamos a hacer en
+                            este vídeo es saltarnos esa parte olvidarnos esa
+                            parte y empezar como se debe para ser un buen
+                            programador debemos de tener la base que es aprender
+                            a programar no aprender un lenguaje de programación
+                            sino aprender a programar Ok una vez aclarado esto
+                            vamos a comenzar lo primero que tenemos que aprender
+                            cuando vamos a programar es el principio básico de
+                            la programación que dice lo siguiente primero
+                            analizo después resuelvo y al final programo A qué
+                            se refiere con esto bueno supongamos que nos ponen
+                            un problema siempre lo primero que hay que hacer es
+                            analizar el problema una vez que lo hemos procedemos
+                            a resolver ese problema y hasta el final solo al
+                            final ya que lo analizamos y resolvimos nuestro
+                            problema vamos a programar qué es lo que sucede con
+                            otros programadores que no tienen éxito Bueno les
+                            dan el problema y no lo analizan Por ende si no lo
+                            analizan no saben la respuesta no saben no lo
+                            resuelven Entonces no saben a qué resultado deben de
+                            llegar y Por ende cuando empiezan a programar pues
+                            se tardan más porque no saben ni siquiera lo que
+                            quieren llegar va de nuevo entonces el principio
+                            básico de programaciones analizo resuelvo y al final
+                            programa Ok una vez entendido esto vamos a pasar a
+                            un ejemplo de la vida cotidiana para relacionarlo y
+                            entender Cómo funciona la programación supongamos
+                            que nuestra mamá nos da una lista de productos que
+                            hay que ir a surtir al súper o al mercado esta Lista
+                            de productos tiene cinco productos la cual cada uno
+                            tiene especificaciones diferentes por ejemplo en
+                            primer lugar los otros leemos que quiere un kilo de
+                            bistec de res posteriormente quiere un kilo de
+                            tomate un diente de ajo un kilo de tortillas y una
+                            coca-cola coca-cola si estás viendo esto
+                            patrocinamos bien cómo se relaciona esto con la
+                            programación Ok si te das cuenta nosotros empezamos
+                            a leer de arriba hacia abajo es decir que muy
+                            seguramente vamos a ir a empezar a comprar las cosas
+                            con este orden que nos dio nuestra mamá pero ojo
+                            puede que nuestra mamá solo nos haya dado este orden
+                            porque quizás así fue como ella se fue acordando de
+                            las cosas bueno en la programación pasa lo mismo
+                            Nosotros somos la mamá quienes vamos a dar una lista
+                            de instrucciones nuestra lista de instrucciones
+                            nuestra lista del mercado va justamente el código
+                            que vamos a programar para dárselo a nuestro hijo y
+                            quién va a ser nuestro hijo Bueno va a ser la
+                            computadora donde se ejecute nuestro programa para
+                            que ser más específicos un programa Va a ser la
+                            serie de instrucciones previamente codificadas para
+                            poder realizar un procedimiento nosotros en este
+                            caso lo que estamos haciendo con el ejemplo es que
+                            vamos a obedecer a nuestra mamá a través de la serie
+                            instrucciones que nos dio vale una vez entendido
+                            esto nos vamos a dar cuenta que en cada
+                            especificación nos dice que traigamos un kilo de
+                            bistec de res un kilo de tomate un diente de ajo un
+                            kilo de tortillas y una coca-cola pero aquí hay algo
+                            que nos llama la atención no nos está dando
+                            especificación de qué tipo de coca-cola si de lata
+                            si de vidrio si de un litro si de 3 litros
+                            únicamente nos dice una coca-cola qué es lo que
+                            sucede cuando nosotros hacemos esto en la vida
+                            cotidiana bueno nosotros asumimos porque somos seres
+                            inteligentes los cuales podemos razonar y tomar
+                            decisiones dependiendo de nuestro razonamiento ojo
+                            principio básico de programación primero analizo qué
+                            procederíamos a hacer a resolver ese problema que es
+                            lo que estamos haciendo pero qué pasa con un
+                            programa que es donde el programa va a funcionar
+                            nosotros analizamos resolvimos y después le vamos a
+                            dar las instrucciones al programa Pero qué pasa aquí
+                            con el programa nosotros podemos asumir que a
+                            nuestra mamá le gusta la coca de lata bien fría pero
+                            el programa no va a saber eso el programa Solo va a
+                            seguir instrucciones si nosotros no especificamos en
+                            cada línea de código lo que debe de hacer realmente
+                            cada programa se va a tronar como nosotros no lo
+                            estamos diciendo Qué tipo de coca-cola nuestro
+                            programa en ese momento nuestro programa se quiebra
+                            y deja de funcionar entonces para ser más
+                            específicos cada vez que nosotros escribamos una
+                            lista de instrucciones para nuestro hijo que va a
+                            ser la computadora para nuestro programa tenemos que
+                            ser bien específicos como aquí queremos un kilo de
+                            bistec de res entonces la computadora va a decir Ah
+                            ok Quiero un kilo de bistec de res pero si nosotros
+                            solo ponemos una coca-cola el programa no va a saber
+                            qué hacer y se va a detener en ese momento Por ende
+                            nuestro programa va a dejar de funcionar y no va a
+                            realizar la funcionalidad que queremos vale Bueno
+                            vamos a dejarlo de momento hasta aquí únicamente te
+                            voy a invitar a que descargues lo que es el raptor
+                            Este programa Yo te lo voy a dejar en la descripción
+                            del vídeo de todo el curso es decir cada vídeo va a
+                            tener el link de descarga de este software en el
+                            siguiente vídeo Vamos a aprender a utilizarlo y
+                            vamos a comenzar a hacer ejercicios en sí solo
+                            quería que aprendiéramos hoy a ver qué es la
+                            programación y a relacionarlo con este con un
+                            ejemplo de la vida cotidiana y bueno por mi parte es
+                            todo si te gustó el vídeo No olvides compartirlo
+                            darle me gusta y por supuesto te invito a
+                            suscribirte a mi canal ya que eso me ayudaría a
+                            seguir creciendo bastante Yo Soy Ernesto y nos vemos
+                            en la siguiente edición Hasta pronto [Música]
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var player;
+
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player("video", {
+                    events: {
+                        onReady: onPlayerReady,
+                    },
+                });
+            }
+
+            function onPlayerReady(event) {}
+
+            function changeVideo(videoUrl) {
+                var iframe = document.getElementById("video");
+                iframe.src = videoUrl;
+                var newText = `
+      Hola qué tal amigos de youtube bienvenidos a la segunda parte del curso cómo aprender a programar antes de comenzar me gusta invitarte que descargues el software que te dejo en la  descripción del vídeo ya que es con el que vamos a estar trabajando recuerda que este programa te lo voy a estar dejando en todos los vídeos de este curso bien en el vídeo pasado veíamos
+que tenemos un principio básico de la programación el cual nos dice que con tenemos un problema y el cual queremos resolverlo a través de la programación lo que tenemos que hacer es primero  analizó después resuelvo y al final programa ok una vez vi recordado esto vamos a comenzar con un problema básico
+de la vida cotidiana lo cual puede llegar a ser una suma este ejemplo a pesar de que es muy sencillo realmente nos va a ayudar a desarrollar una  habilidad de análisis y de resolución vamos a ver por qué el principio básico de la programación nos dice que lo primero que tengo que hacer yo antes cuando tengo un problema y antes de
+pasar a la programación es que primero debo de analizar ok vamos a analizar cómo se debe de analizar un problema que quiero programar lo primero que tengo  que ver es que yo tengo tres elementos si te das cuenta yo tengo aquí otro dos y un cuatro es decir tres
+números los cuales me están ocupando un espacio en la pantalla si yo no tuviera estos espacios yo no podría escribir esos números  entonces con ayuda de estos espacios yo puedo colocar mis números que voy a utilizar para mi suma vale
+posteriormente ya que sabemos que tenemos tres elementos que vamos a utilizar hay que reducir para que los vamos a utilizar si te das cuenta que  tenemos un signo de más o de adición eso quiere decir que estamos sumando estos dos elementos y después tenemos un signo de igual lo cual quiere decir que de
+este lado va el resultado de esta suma ok una vez entendido esto ya tenemos hecho el análisis terminado lo que vamos a  proceder es hacer el segundo paso del principio básico de la programación el cual es resolver el problema aquí podemos ver que es un 4 pero qué pasaría
+set y te dirá en la suma sin ese 4 obviamente procederíamos a sumar la entonces vamos a realizar esta suma dos  más dos es igual a 4 ok si te das cuenta nosotros ya analizamos nuestra suma ya analizamos
+nuestro problema y ya lo resolvimos sabemos que tenemos tres espacios que necesitamos para poder poner nuestros números que son dos elementos que se van  a sumar y un tercer elemento que va a ser el resultado y finalmente ya resolvimos que sabemos que dos más dos es igual a cuatro perfecto ya cumplimos
+con los primeros dos pasos del principio básico de programación ahora si procedemos a programar vale  vamos a rápido abrir lo que es raptor yo ya lo tengo abierto te lo dejo en un rol para que lo descomprima y bien yo la versión de este programa que te dejo es
+la versión portable quiere decir que no requiere ningún tipo de instalación únicamente lo ejecutas y lo puedes utilizar ok cuando nosotros abrimos raptors lo  primero que tenemos que hacer antes de cualquier cosa es guardar el archivo ya que si no lo hacemos así raptors no nos va a permitir trabajar con él yo lo voy
+a guardar como suma y toma en cuenta que todos los archivos que tú guardas en rapto llevan una extensión de punto raro lo voy a guardar en el escritorio y voy a darle guardar  voy a ir rápidamente al escritorio para ver y efectivamente aquí está mi archivo creado vamos a regresar al raptor y vamos a comenzar vamos a ver qué es
+rapto raptor es un software libre el cual nos va a permitir diseñar y ejecutar programas a través de diagramas de flujo pero no te espantes este  programa es muy didáctico es muy fácil de utilizar y realmente el único que vamos a ir haciendo es ir armando nuestro diagrama de flujo con todos estos símbolos que nos dan aquí
+solamente los agarramos y los vamos a ir colocando dándole una funcionalidad verás que es cómo armar un pequeño rompecabezas pero con la diferencia de  que tú le das el sentido que quieras ok vamos a continuar este software lo vamos a ir aprendiendo a usar conforme vayamos avanzando el curso así es que no te
+preocupes yo te voy a enseñar paso por paso para que no tengas ningún problema lo primero que tenemos que hacer es entender que dentro de nuestro problema  tenemos tres espacios que estábamos hablando hace un momento los cuales son los que ocupan estos números en la pantalla nosotros aquí los podemos ver
+porque los tenemos visualmente al frente pero qué pasa en la programación en la programación nosotros también tenemos que indicarle a la computadora  que necesitamos espacios donde vamos a alojar nuestros números para hacer la suma y guardar un resultado a estos
+espacios en la programación se le conocen como variables y la definición de una variable es el espacio en memoria  es decir una variable es un espacio en memoria ok de aquí en adelante a los espacios en memoria nosotros nos vamos a
+referir como variables ok bueno vamos entonces a abrir un espacio en memoria para nuestra suma nosotros  tenemos aquí tres elementos por ende cuántos espacios necesitamos necesitamos tres espacios en memoria es decir
+necesitamos tres variables vamos a proceder el primer símbolo con el que nos vamos a encontrar aquí se llama asigna men o asignación este símbolo lo  que nos va a permitir es declarar variables o en su defecto abrir espacios en memoria que sabemos ahora que una variable y un espacio en memoria es
+exactamente lo mismo y también nos va a permitir realizar operaciones aritméticas así es que vamos a proceder para tu poder utilizar los símbolos que  tienes aquí solo basta con que des un clic en el momento en el que se pone en rojo tú ya lo puedes utilizar no hace falta que lo arrastres solo hace un clic
+sobre el símbolo que vas a utilizar y posteriormente te diriges al diagrama de flujo que tenemos aquí para colocarlo nosotros vamos a colocar las piezas los  símbolos en estas pequeñas flechitas que nos ponen aquí que se les conocen como conectores dentro de un diagrama de flujo todo diagrama de flujo tiene un
+inicio y un final al igual que lo que tú haces en tu vida cotidiana por ejemplo esta suma tiene un inicio y un final que quiere decir que empezamos con un número  y terminamos con un resultado así es tienes un número un signo de suma y otro número los sumas sabes que después de este signo tiene que ir un resultado y
+listo ya terminaste tu suma lo mismo pasa con los programas los programas y los diagramas de flujo tienen un inicio y un fin ahora qué es un diagrama de  flujo un diagrama de flujo es la forma gráfica de representar un algoritmo y un algoritmo simplemente es una secuencia de pasos a seguir para resolver un
+problema lo que vamos a hacer al terminar este tutorial es que tú vas a ver de hecho diagrama de flujo tu primera algoritmo y tu primer programa todo eso en este  vídeo así es que vamos a comenzar comenzar como te comentaba sólo basta que esté en rojo y vamos a darle clic sobre este conector y listo si te des
+cuenta automáticamente se agregó ahora ya que tenemos nuestro símbolo de asignación que es lo que vamos a hacer pues vamos a darle doble clic sobre él  porque tenemos que decirle a la computadora que necesitamos un espacio en memoria es decir una variable donde vamos a colocar primero este 2 así es
+que vamos a hacerlo como lo hacemos bueno aquí nos da dos campos de texto donde nosotros podemos escribir cosas en  el primero vamos a colocar el nombre de nuestra primer variable el nombre de nuestro primer espacio en memoria es decir dónde va a ir este dos necesitamos
+indicarle a la computadora cómo se va a llamar bueno en nuestro programa le vamos a poner valor 1 ok ahora algo bien  importante en programación las variables tienen tipos de datos es decir tenemos datos enteros numéricos y tenemos datos
+de texto a su vez estos datos se dividen en subtipos pero esto lo vamos a ir viendo más adelante de momento ten en cuenta que existen dos  tipos de variables los numéricos y las variables de texto en este caso como va a ser una suma necesitamos tres variables de valor numérico entonces a
+nuestra primera variable que se va a llamar valor uno le vamos a poner un cero así es porque le ponemos un cero bueno las variables necesitan saber de  qué que esté qué valor van a tener de qué tipo va a ser si numérico o texto cuando nosotros colocamos un cero no tiene ningún valor pero eso no implica
+que el cero deja de ser un número al contrario el cero es un número y por ende al tú poner aquí un número le estás diciendo al programa que esta variable  va a ser de tipo numérico si nosotros quisiéramos hacer una variable de tipo texto tendríamos que poner dos comillas y con esto nosotros decimos al programa
+que nuestra variable va a ser de tipo texto de momento nosotros vamos a hacer una suma entonces necesitamos tres variables de tipo numérico basta con que  le pongamos un cero y listo vamos a dar clic aquí y si te das cuenta en este momento ya tenemos nuestra primera variable que se llama valor 1
+cuál va a contener un cero algo bien importante que te comentaba en el vídeo anterior es que nosotros tenemos una lista que nos daba a mamá en donde  nosotros leíamos de arriba hacia abajo y de izquierda a derecha en programación cambia un poco los programas van a leer
+nuestras instrucciones siempre de arriba a abajo es por eso que el inicio lo tiene aquí y el final lo tiene acá pero algo bien curioso es que la programación  se lee de derecha a izquierda en todo programa todo código de programación y todo lenguaje de programación va a leer siempre de derecha a izquierda incluso
+aquí tú puedes darte cuenta con la flechita como se está diciendo que el cero se va a colocar dentro de la variable de valor uno vale ahora vamos a  colocar los siguientes dos espacios en memoria las siguientes dos variables que necesitamos que es el otro 2 y el 4 dónde vamos a guardar el resultado ok
+vamos a colocar nuestro mientras esté en rojo podemos seguir usando este símbolo antes vamos a colocar otros dos símbolos de asignación que son donde vamos a  colocar nuestras últimas dos variables o espacios en memoria vamos a dar doble clic y vamos a y ahora nuestro tercer nombre vamos a
+ponerle valor 2 y finalmente vamos a indicarle que es de valor numérico vamos a darle atrás y  listo y finalmente vamos a dar doble clic y vamos a ponerle aquí que se llama resultado y finalmente vamos a indicarle que también es de valor numérico
+entonces vamos a ponerle un cero listo con esto nosotros ya tenemos nuestras tres variables ahora vamos a dar aquí en la flechita de inicio vamos a  ejecutar nuestro programa y si te das cuenta se van a ir abriendo nuestros espacios en memoria justamente así es como funciona la programación empieza a
+leer el código y posteriormente la computadora te va abriendo los espacios en memoria si te das cuenta aquí salen los ceros porque es lo que asignamos no  tiene ningún valor pero no eso no quiere decir que deja de ser un número y por ende nuestras variables son de valor numérico ok para terminar rápidamente
+vamos ahora a utilizar el mismo símbolo de asigna mente el cual nos va a permitir realizar también operaciones aritméticas recuerda que nos sirve para  declarar variables y hacer operaciones aritméticas como vamos a hacer eso damos doble clic sobre el símbolo y si te das cuenta nos vuelve a desplegar la misma
+pantalla pero como hacemos ahora para ser una suma en lugar de que nos declaré una variable bueno recuerda que aquí tenemos que poner el nombre de la  variable que queremos utilizar en este caso nosotros ya declaramos que tenemos tres variables las cuales vamos a utilizar dos de suma que es donde van
+nuestros dos números dos y finalmente el resultado dónde va a caer nuestro número cuatro entonces vamos a hacer lo siguiente perdón  vamos a hacer lo siguiente vamos a poner aquí arriba el nombre de la variable donde queremos que se guarda el resultado en este caso es resultado y
+finalmente aquí vamos a poner qué operación queremos hacer nosotros queremos sumar valor 1 y valor 2 entonces vamos a poner valor 1 espacio  más valor 2 y listo vamos a darle atrás y cómo te das cuenta aquí ya estabas diciendo nuestro programa nuestro símbolo qué
+valor 2 se va a sumar con valor 1 y se va a depositar en la variable resultado recuerda que en programación leemos de arriba hacia abajo y de derecha a  izquierda ok finalmente ya que tenemos nuestros tres espacio en memoria hechos vamos a sumar nuestros dos valores ojo
+algo bien importante es que nosotros no podemos hacer la suma si no hemos pedido los datos al usuario como hacemos eso aquí tenemos dos herramientas nosotros  que se llaman input output input nos va a permitir introducir datos desde teclado quiere decir que con esto nosotros vamos a poderle decir a nuestro
+usuario que introduzca datos y con output vamos a poderle mandar mensajes desde nuestro programa es decir que cuando salga el resultado nosotros le vamos a poder decir a través de un  output cuál fue el resultado de la suma ahora vamos a usar input tú dirás porque dejaste esto el último y no lo hiciste después de declarar las variables seguro
+se te pasó pero no lo que quería era demostrarte que yo puedo colocar el símbolo que está en rojo lugar por ejemplo ahorita y vamos  poniendo conforme bajamos la flechita pero perdón conforme vamos bajando sobre el conector que estaba en siguiente pero supongamos que yo quiero pedir un dato
+después de abrir mis tres espacios en memoria voy a dar clic uno y clic dos porque dos clics porque primero le voy a  decir al usuario que me dé el valor este el primer número es decir valor 1 dame el primer valor ojo cuando queramos
+usar texto en programación siempre deben ir entre comillas entonces vamos a poner que entre comillas y le vamos a poner aquí dame el primer palo  y le vamos a poner aquí adentro que en donde queremos guardar ese valor nosotros ya tenemos espacios abiertos donde queremos guardar ese valor
+recuerda que es lo que hablábamos al principio nosotros para poder poner los números necesitamos tener espacios que son nuestras variables entonces vamos a  poner aquí que queremos que se guarde en valor 1 listo y que aquí vamos a dar segundo clic aquí le vamos a decir que
+aquí se guarde el valor aquí le vamos a decir recuerda qué cosas con el texto entonces va entre comillas le vamos a decir dame el segundo valor y  finalmente le vamos a decir que se guarde en valor 2 ok una vez hecho esto vamos ahora sí a resolver nuestra suma
+que es la operación que ya habíamos hecho y finalmente vamos a utilizar un output el output que damos que es como le vamos a mandar mensajes al usuario  después de que se haya terminado un proceso vamos a dar igual doble clic sobre él y únicamente aquí nos va a salir un único cuadro de texto nosotros
+entre comillas porque es texto le vamos a decir el mensaje el resultado de tu suma es  y vamos a dar un espacio porque vamos a dar un espacio aquí porque si no se amontonan las cosas porque se van amontonar bueno cuando nosotros queremos
+unir un mensaje que le estamos mandando al usuario a través de un output necesitamos utilizar un signo de  concatenación el cual es este este signo en matemáticas lo conocemos como ya lo habíamos visto como signo de suma o de
+adición en programación se le conoce como un signo de concatenación es decir en la concatenación vamos a unir dos  elementos diferentes podemos unir un letrero una cadena de texto y una variable la variable tiene que ir fuera
+de entre comillas porque justamente es eso es una variable no es una cadena de texto es un espacio en memoria que ya está abierto y que nosotros queremos  mostrar qué es lo que tiene dentro entonces con ayuda del output nosotros le vamos a mandar a nuestro usuario el mensaje y más aparte el resultado de lo
+que tenemos guardado en esta variable en este caso nuestro resultado justamente está guardado en una variable que llamamos resultado  resultado si te das cuenta incluso aquí ya nos lo indica nos lo reconoce como variable ok vamos a darle atrás y listo
+nuestro programa ya quedó terminado es decir este es nuestro primer diagrama de flujo nuestro primer algoritmo y nuestro primer programa vamos a ejecutarlo para  ver cómo se comporta si te das cuenta va abriendo espacio en memoria y listo qué es lo que pasa nos manda un mensaje en pantalla donde nos pide que le demos el
+primer valor que damos que nuestro primer valor va a ser un 2 entonces vamos a poner un 2 y vamos a darle ok si  te das cuenta se guardó en valor 1 tal y como nosotros lo programamos después vamos a poner el siguiente 2 vamos a
+ponerle ok y mira qué es lo que pasó se guardó el 2 hizo la suma y sacó como resultado un 4 que es lo que nosotros  esperábamos realmente y mira perdone lo que pasa aquí es que ya nos manda un mensaje en esta pantallita únicamente nos va a mandar el mensaje de salida que
+es lo que programamos con el output el resultado de tu suma es 4 si te das cuenta este es el letrero que nosotros abrimos  vamos a ponerlo aquí aquí si te das cuenta aquí dice el resultado de tu suma es 4 nosotros dentro de la cadete de
+texto sólo pusimos el resultado de tu suma es y con acá tenemos la variable que es este 4 y bueno así es cómo se  hace esto de momento espero que no tengas dudas si tienes dudas házmelo saber en los comentarios de este vídeo y nada más una cosa me gustaría aclararte
+cuando tú guardas el proyecto del raptor raptor lo que hace ter crea muchos backups estos bancos son respaldos tú no  les hagas caso tú los puedes borrar lo que nos importa a nosotros es el primer archivo que creamos este primer archivo ese si no lo vais a borrar porque se
+borra tu programa entonces vamos aquí le damos vamos a dar el archivo guardar ya se guardó y listo eso es todo y bien  pues este vídeo ya se alargó demasiado así es que vamos a dejarlo hasta aquí espero me haya explicado correctamente y como te comento si tienes alguna duda no
+dudes en hacérmelo saber en los comentarios de este vídeo y bueno por mi parte es todo si te gusto el vídeo no olvides compartirlo darle me gusta y por supuesto te invito a suscribirte a mi  canal ya que eso me ayudaría a seguir creciendo bastante yo soy ernesto y nos vemos en la siguiente edición hasta pronto
+[Música]
+      `;
+
+                document.getElementById("texto").textContent = newText;
+            }
+            function changeVideo2(videoUrl) {
+                var iframe = document.getElementById("video");
+                iframe.src = videoUrl;
+                var newText = `
+        Hola Qué tal amigos de YouTube Bienvenidos a la tercera parte de este curso de cómo aprender a programar recuerda que en la descripción de todos los videos de este curso yo te dejar el software junto con los ejercicios que vayamos realizando para que los puedas descargar y si eres nuevo No te preocupes que también te dejo un enlace que te lleva directo a la primera parte
+        de este curso vamos a comenzar rápidamente y como recordarás en el video pasado programamos una suma y aplicamos el principio básico de la programación en esta ocasión nosotros vamos a aprender a utilizar los condicionales Pero qué es un condicional en la programación bien únicamente es un una instrucción que nos va a permitir
+        decirle a nuestro programa Qué proceso o qué camino debe de ejecutar vamos a verlo de una manera más clara con este ejemplo supongamos que nosotros tenemos un programa donde le vamos a decir a nuestro usuario que puede elegir de Entre cuatro opciones siempre y cuando él nos ayude a decidir esta opción cómo
+        vamos a hacer esto Bueno le vamos a decir que presione uno si quiere realizar una suma que presione dos si quiere una resta que presione tres si quiere multiplicar y que presione cuatro si quiere dividir como podrás darte cuenta Nosotros acabamos de abrir cuatro opciones cuatro distintos caminos que
+        nuestro usuario va a poder elegir esto es una condición estamos condicionando nuestro programa un ejemplo un poco más claro es que cuando tu mamá por ejemplo te decía tú no puedes llegar después de las 10 porque si no te regaño Ahí ya te está condicionando qué es lo que pasa
+        tienes dos caminos posibles el primero es que si tú Llegas temprano si llegas antes de las 10 tu mamá no te va a regañar pero si tú llegas después de las 10 tu mamá te va a regañar lo mismo pasa con los programas los programas Tú los puedes condicionar para que sigan ciertas instrucciones dependiendo de una
+        acción en este caso nosotros le estamos diciendo al usuario que dependiendo de la opción que de eh nuestro usuario Perdón va a ser lo que nuestro programa Va a ejecutar si presiona el uno va a seguir el primer camino si presiona el dos va a seguir el segundo camino y así sucesivamente Okay una vez ya que
+        entendimos esto vamos a aplicar nuestro principio básico de la programación el cual nos dice que primero tenemos que analizar antes de comenzar a programar nosotros lo que vamos a hacer a continuación va a ser analizar Cuántas variables necesitamos para poder empezar a programar recuerda que aquí vamos a eh
+        nosotros a elegir a decir al usuario que nos dé un dato es decir un número para que nosotros podamos decidir qué camino debe de seguir nuestro programa bien con este dato nosotros tenemos que arlo en algún lugar para eso vamos a requerir una variable y después vamos a requerir otras tres variables que son las
+        siguientes valor uno valor dos y el resultado como podrás darte cuenta necesitamos cuatro variables tú quizás dirás oye pero aquí tienes más números Por qué no vamos a abrir más variables Bueno pues eso es simple Porque nuestro usuario no va a ejecutar todas las operaciones simultáneamente sino
+        únicamente a través de este valor que nos va a asignar él nos va a decir qué operación quiere realizar lo único que va a cambiar Es que cuando apriete por ejemplo aquí un dos aquí va a cambiar el signo Y en lugar de suma vaer una resta pero los espacios que tenemos aquí para valor uno valor dos y resultado van a
+        ser siempre los mismos bien una vez entendido esto vamos por favor a ejecutar raptor como recordarás yo te dejé la versión portable es decir no requiere que la instales bien una vez que tengamos abierto raptor lo primero que vamos a hacer como como ya te habré
+        comentado anteriormente es guardar el proyecto yo lo voy a guardar y le voy a llamar operaciones y lo voy a guardar en el escritorio vamos al escritorio y como podrás darte cuenta ya está aquí mi archivo vamos a regresar a raptor y vamos a comenzar abriendo los espacios
+        en memoria como recordarás el símbolo que utilizamos para abrir espacios en memoria o más bien para declarar variables se llama asignen que es este vamos a poner los cuatro las cuatro variables que necesitamos que es la instrucción del usuario y los tres elementos para hacer la suma o la
+        operación y un resultado Entonces vamos a poner Aquí vamos a dar doble clic sobre el primero y le vamos a llamar a esta variable operación que es donde va a llegar el valor de la decisión que requiere el usuario que tomó el usuario vamos a decirle que es de valor numérico después vamos a poner aquí una segunda
+        variable que se va a llamar valor uno y le vamos a decir que también es de valor numérico vamos a declarar el segundo valor que es valor 2 y De igual forma vamos a decirle que es de valor numérico y finalmente vamos a decirle que necesitamos una variable donde guardar el resultado que vamos a
+        llamar resultado listo una vez hecho esto vamos a empezar a interactuar con nuestro usuario vamos a decirle a través de un input que por favor nos dé Qué operación quiere realizar recuerda que para escribir texto dentro de la programación siempre debe de ir entre comillas en esta ocasión vamos a decirle
+        elige una opción uno para sumar coma dos para restar coma 3 para
+        multiplicar y cu para dividir listo en este momento nosotros ya estamos mandando el mensaje le estamos diciendo que presione aquí nos faltó uno no vamos a dejarlo así Creo que queda entendido que con uno si escribe uno va a sumar
+        con dos va a restar con tres va a multiplicar y con cuatro va a dividir pero nos falta indicarle En qué parte se va a alojar el valor que nos dé el usuario cuando el usuario guarde o nos envíe ese valor a través del teclado nosotros tenemos que decirle al programa dónde se va a guardar entonces Recuerda
+        que nosotros abrimos aquí una variable que se llama operación que es la que vamos a utilizar para que se Guarde ese valor listo ahora una vez que ya tenemos esto vamos a empezar a utilizar una condición vamos a acondicionar a nuestro programa para eso raptor nos proporciona un símbolo que se llama selection vamos
+        a colocarlo aquí que es donde comienza las condiciones y mira si te das cuenta nos pone un rombo con dos caminos diferentes que es lo que te decía una condición únicamente es una instrucción que nos va a permitir decirle a nuestro programa Qué camino o qué proceso debe de seguir bien Vamos a configurarlo cómo
+        se programa esto vamos a dar doble clic sobre el rombo y después nos va a salir aquí una ventana en esta ventana Nosotros le vamos a decir la condición que se tiene que cumplir en este caso la primer condición que nosotros pusimos es que presione uno el usuario para que se realice una suma Entonces como ese Este
+        valor se va a guardar dentro de la variable operación le vamos a decir que operación tiene que ser igual a uno porque si no entonces no se va a cumplir la condición Okay qué es lo que pasa si aquí el usuario presiona uno se va a hacer la pregunta el programa okay Aquí hay una condición y va a decirse el
+        programa Así mismo operaciones igual a uno si realmente operación es igual a uno va a decir Ah sí Mira es igual a uno y va a seguir este camino pero qué pasa si operación no es igual a uno va a proceder a ir a otro camino Entonces
+        nosotros lo que vamos a hacer aquí es poner Otra condición Recuerda que Mientras esté en rojo podemos seguir utilizando este símbolo vamos a colocarlo aquí y le vamos a decir que valide la siguiente condición Cuál es la siguiente condición Bueno pues se supone que le estamos diciendo a nuestro
+        usuario que opción uno es para sumar si el usuario presiona uno se va a ir para acá pero imagina que el usuario no presionó uno entonces si el si el usuario aquí no es igual operación no es igual a uno se va a ir para este lado y se va a hacer la siguiente pregunta cuál es nuestra siguiente condición es dos
+        Entonces vamos a decirle lo mismo operación es igual a 2 y entonces cuando llegue aquí nuestro programa se va a hacer la misma pregunta Oye operación es igual a dos si el usuario presionó el dos en automático nuestro programa va a
+        decir Ah sí Mira presionó el dos Y aquí va a ejecutarse la resta pero en caso dado de que no Entonces va a decir no operación tampoco es igual a dos y se va a venir a este lado es decir va a decir no y se va a ejecutar esta parte de aquí Entonces qué necesitamos una tercer condición donde le vamos a decir okay No
+        es uno no es dos Entonces cuál es nuestra siguiente opción pues es tres para multiplicar vamos a hacer lo mismo le vamos a decir a ver compara si operación es igual a 3 vamos hacia atrás y va a hacer lo mismo va a llegar aquí nuestro programa y se va a preguntar a ver operación es igual a TR si operación
+        es igual a TR y nuestro usuario aquí presionó un tres va a llegar a esta parte de aquí va a decir Ah mira sí operación es igual a tres y se va a ejecutar esta parte de aquí pero en caso de que no operación tampoco sea igual a 3 también va a decir ah no Mira entonces va a seguir otro camino y qué es lo que
+        hacemos vamos a poner una cuarta condición donde finalmente le vamos a decir cuatro para dividir vamos a configurar esto y le vamos a decir Okay valida lo siguiente operación es igual a 4 entonces nuestro programa Va a ser
+        exactamente lo mismo va a caer aquí y se va a preguntar lo mismo operación es igual a 4 en caso de que sea así en ese momento se va a ejecutar la división que nosotros programemos pero en caso de que no va a ejecutarse Aquí esta sentencia
+        Pero qué sucede si nuestro usuario coloca un 10 va a venir aquí va a decir a ver operaciónes igual a uno no operaciones igual a dos no operaciones igual a tres No tampoco entonces operaciones igual a 4 No yo tengo un 10 entonces nuestro programa va a decir Oh
+        Oh entonces qué hago va a seguir hacia acá y entonces aquí nosotros tenemos que ponerle un mensaje Por qué un mensaje porque nosotros únicamente le vamos a decir que el ese programa nosotros solo tenemos la opción de cuatro operaciones no tenemos 10 operaciones entonces con ayuda de un output le vamos a decir aquí
+        un mensaje a nuestro usuario vamos a dar doble clic y le vamos a decir recuerda texto entre comillas le vamos a decir lo sentimos la opción que elegiste no existe y listo vamos a probar nuestro
+        programa tal y como está para que veas que efectivamente todos los no funcionan vamos a ejecutarlo de una vez y mira si te das cuenta empieza a hacer su proceso Abre espacios en memoria y listo nos dice elige una opción uno para sumar dos para restar tres para multiplicar y
+        cuatro para dividir pero supongamos que yo pongo un 10 okay Fíjate lo que pasa se empieza a preguntar y finalmente qué es lo que pasó nos dice lo sentimos la opción que elegiste no existe Entonces en este momento termina el proceso y directamente se va al final Okay en esta
+        parte yo te voy a invitar a que tú eh realices el problema Es decir que termines este ejercicio De qué manera Ya te enseñé en el video pasado a Cómo realizar una suma Entonces en este caso tú aquí vas a utilizar una suma después
+        opción dos aquí vas a hacer una resta aquí vas a hacer una multiplicación y aquí vas a hacer una división Entonces vamos a hacerlo de la siguiente manera yo voy a hacer primero la suma te voy a explicar cómo utilizar el condicional aquí pero a partir de este punto tú lo vas a hacer solo así es que requiero que
+        cuando termine de usar la suma detengas el video Recuerda que para pedir los valores teníamos valor uno valor dos y después la suma con una asignen y finalmente con un output mandábamos el resultado vamos a dar doble clic encima y con ayuda de un letreo le vamos a
+        decir Dame el valor uno Y dónde lo vamos a guardar Recuerda que nosotros ya declaramos una variable aquí arriba le vamos a decir que ese valor se guarde en la variable valor uno después vamos a hacer lo mismo con el valor dos entre comillas porque es texto le vamos
+        a decir Dame el segundo valor y finalmente le vamos a decir aquí que lo guarde en la opción valor dos okay es decir que ya tenemos los dos valores en este momento cuando ingresa aquí nuestra condición que operación es igual a uno va a decir okay valor uno se
+        lo damos valor dos nos lo da nuestro usuario y vamos entonces a proceder a realizar la operación recuerda que aquí debe de ir el nombre de la variable que vamos a utilizar o en este caso que vas a declarar nosotros ya tenemos declarada una variable que es resultado Entonces le vamos a decir que en resultado se
+        guarde el valor de la suma que es entre los datos valor 1 más valor do Vamos a darle okay Y mira en este momento hacemos la suma de valor 2s valor un y se va a guardar en resultado Ya solo nos resta realizar el letreo en pantalla donde le damos el resultado a nuestro
+        usuario vamos a ponerlo entre comillas y le vamos a poner aquí el resultado de tu suma y digo suma porque es la opción uno si fuera operación dos en la condición dos sería aquí el resultado de tu resta aquí sería el resultado de tu multiplicación y aquí sería el resultado
+        de tu división Entonces vamos a poner aquí el resultado de tu suma es espacio para que no se amontone y utilizamos el signo de concatenación para concatenar la variable resultado porque recuerda que pedimos valor uno más valor dos se va a guardar en la variable resultado
+        Entonces vamos a ponerle aquí que resultado que se muestre lo que está en resultado Okay Nosotros con esto ya habremos acabado la suma vamos a ejecutarlo para ver que efectivamente nuestra suma esté funcionando empieza a hacer todo y nos va a pedir que nosotros introduzcamos un
+        número Ya vimos lo que pasa si si presionamos este un número que no está dentro de las opciones pero en este caso nosotros ya acabamos de configurar de programar la suma Entonces vamos a ponerle uno vamos a darle Okay y en ese momento me pide el valor uno yo le voy a decir que es dos me va a pedir el
+        siguiente valor entonces también es 2 finalmente hace el resultado hace la operación que es 2 + 2 es = a 4 y qué pasa el resultado de tu suma es cuatro y con esto nuestro programa ya habrá terminado su ejecución ahora aquí es donde tú paras el video y te pido que
+        por favor tú realices lo que es la resta la multiplicación y la división Okay Recuerda que para operaciones aritméticas en programación para la división utilizamos una diagonal y para multiplicar utilizamos un asterisco bien
+        nos vemos enseguida muy bien una vez que hayas terminado de hacer este ejercicio te tuvo que haber quedado algo así si no te quedó así O aún no lo has empezado a hacer no te preocupes yo este ejercicio te lo voy a dejar en la descripción de este video para que lo puedas descargar y lo puedas revisar como te comentaba al
+        principio la idea de los condicionales es poderle decir al programa Qué proceso o qué camino debe de seguir nosotros vamos a elegir ahorita el número tres para que realice una multiplicación vamos a ver que efectivamente nuestro programa esté funcionando Vamos a darle aquí Play vamos a correrlo y mucho ojo Fíjate cómo empieza a abrir los espacios
+        en memoria nos solicita que nosotros le indiquemos Qué operación quedaré queremos realizar Entonces vamos a presionar tres para que realice una multiplicación ojo aquí es donde te comentaba al principio que se pregunta operación es igual a 1 Tom en cuenta que si nosotros ponemos el tres el valor que
+        va a traer operación es tres entonces va a decir no es tres entonces se va a brincar a la siguiente opción operación es igual a 2s no es tres entonces se va a brincar a la siguiente operación operación es igual a TR Ah sí Mira yo traigo un tres Entonces qué es lo que va a hacer va a decir sí y va a emp a
+        ejecutar este proceso vamos a probarlo Okay brinca brinca y mira efectivamente empieza a hacer ese proceso ahora nos pide el primer valor vamos a decirle que nuestro primer valor es 2 Después nos pide nuestro segundo valor le voy a decir que sea C para que sea 2 * 5 sea igual a 10 aquí se va a poner un 10 que
+        se va a guardar en memoria y Finalmente nos va a arrojar el resultado por pantalla Okay se pone el 10 y resultado en pantalla el resultado de la multiplicación es 10 y bueno en Sí en teoría lo que quería era explicar justamente Cómo funcionan los condicionales Qué son los condicionales
+        en la programación y Esto justamente esto que estás viendo Así es como funciona una condición los condicionales en programación y bueno por mi parte es todo si te gustó el video No olvides compartirlo darle me gusta y por supuesto te invito a suscribirte a mi canal ya que eso me ayudaría a seguir creciendo bastante Yo Soy Ernesto y nos
+        vemos en la siguiente edición Hasta pronto i
+        `;
+                document.getElementById("texto").textContent = newText;
+            }
+
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </body>
+</html>
+<footer>Realizado por: Ricardo Vallejo Sánchez</footer>
